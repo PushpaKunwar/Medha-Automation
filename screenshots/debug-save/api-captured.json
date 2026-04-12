@@ -1,0 +1,2459 @@
+{
+  "account/login": {
+    "requests": [
+      {
+        "userId": "teacherdemo@gmail.com",
+        "pwd": "Teacher@01"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "message": "Success",
+        "data": {
+          "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODJmZGIxNTg1ZmZiY2FkZjBhYzNhIiwiYWN0X3R5cCI6W10sImVtYWlsIjoidGVhY2hlcmRlbW9AZ21haWwuY29tIiwiY29udF9udW0iOiI4ODI0NDc2MTI3IiwiZGlzcF9uYW1lIjoiTXMuIFJhY2hlbCBHcmVlbiIsInZkaXNwX25hbWUiOiJNcy4gUmFjaGVsIEdyZWVuIiwicHJvZmlsZUlkIjpudWxsLCJnZW5kZXIiOiJGZW1hbGUiLCJkb2IiOiIxOTk3LTA5LTA5VDAwOjAwOjAwLjAwMFoiLCJwcm9maWxlX2ltYWdlIjoiRW1wbG95ZWUvRW1wbG95ZWUvNDk5MzQ4YTYtODNjNi00ZDg0LWIyOWMtMDBmMzU3ZGUxYzVjLmpwZyIsImlhdCI6MTc3NTk3MzY3MCwiZXhwIjoxNzc2MDA5NjcwfQ.bOmDF_DzmM2awtYVfk-wUXBZUyrjwWdfd5gLheTGse4",
+          "expiresIn": 600,
+          "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjc1ODJmZGIxNTg1ZmZiY2FkZjBhYzNhIiwiYWN0X3R5cCI6W10sImVtYWlsIjoidGVhY2hlcmRlbW9AZ21haWwuY29tIiwiY29udF9udW0iOiI4ODI0NDc2MTI3IiwiZGlzcF9uYW1lIjoiTXMuIFJhY2hlbCBHcmVlbiIsInZkaXNwX25hbWUiOiJNcy4gUmFjaGVsIEdyZWVuIiwicHJvZmlsZUlkIjpudWxsLCJnZW5kZXIiOiJGZW1hbGUiLCJkb2IiOiIxOTk3LTA5LTA5VDAwOjAwOjAwLjAwMFoiLCJwcm9maWxlX2ltYWdlIjoiRW1wbG95ZWUvRW1wbG95ZWUvNDk5MzQ4YTYtODNjNi00ZDg0LWIyOWMtMDBmMzU3ZGUxYzVjLmpwZyIsImlhdCI6MTc3NTk3ODc0NSwiZXhwIjoxNzc4NTcwNzQ1fQ.ruvZSrgx5MargVmtaQ691_ZfE2VY6dt-9a1aXQBYhZw",
+          "tokenType": "JWT",
+          "user_id": "67582fdb1585ffbcadf0ac3a",
+          "typ_id": "64b91e88d93b38dfc9d71fab",
+          "typ_name": "Campus"
+        }
+      }
+    ]
+  },
+  "campus_onboarding_ms/getCampusUserRelation": {
+    "requests": [
+      {
+        "user_id": "67582fdb1585ffbcadf0ac3a"
+      },
+      {
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_type": "Emp"
+      },
+      {
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_type": "Emp"
+      },
+      {
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_type": "Emp"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "user_id": "67582fdb1585ffbcadf0ac3a",
+            "user_type": "Employee",
+            "campus_relation_data": [
+              {
+                "campus_group_id": "6758226c1585ffbcadf07165",
+                "campus_group_name": "Mafatlal Group of School ",
+                "tracking_project_id": 16,
+                "campus_group_url": "My_School/School/1b477209-ec9c-4945-b894-595d26f8a782.jpeg",
+                "css": {
+                  "--primary-color": "#004392",
+                  "--secondary-color": "#0058cb",
+                  "--form-border": "#0043922e",
+                  "--form-bg": "#0043920a",
+                  "--font-size": "14px",
+                  "--font-color": "#33363b",
+                  "--label-color": "#212529"
+                },
+                "parent_dashboard": "",
+                "principal_dashboard": "todo",
+                "student_dashboard": "",
+                "teacher_dashboard": "todo",
+                "is_platform_group": "Yes",
+                "campus_designation_id": "67582f567432c0d5783dedcd",
+                "is_super_adm": 0,
+                "is_head": 0,
+                "status": "Active",
+                "board_id": "c402bf7d-31f0-11ee-ad79-00ff1480a0ba"
+              }
+            ]
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "user_id": "67582fdb1585ffbcadf0ac3a",
+            "user_type": "Employee",
+            "campus_relation_data": [
+              {
+                "campus_group_id": "6758226c1585ffbcadf07165",
+                "campus_group_name": "Mafatlal Group of School ",
+                "tracking_project_id": 16,
+                "campus_group_url": "My_School/School/1b477209-ec9c-4945-b894-595d26f8a782.jpeg",
+                "css": {
+                  "--primary-color": "#004392",
+                  "--secondary-color": "#0058cb",
+                  "--form-border": "#0043922e",
+                  "--form-bg": "#0043920a",
+                  "--font-size": "14px",
+                  "--font-color": "#33363b",
+                  "--label-color": "#212529"
+                },
+                "parent_dashboard": "",
+                "principal_dashboard": "todo",
+                "student_dashboard": "",
+                "teacher_dashboard": "todo",
+                "is_platform_group": "Yes",
+                "campus_designation_id": "67582f567432c0d5783dedcd",
+                "is_super_adm": 0,
+                "is_head": 0,
+                "status": "Active",
+                "board_id": "c402bf7d-31f0-11ee-ad79-00ff1480a0ba"
+              }
+            ]
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "user_id": "67582fdb1585ffbcadf0ac3a",
+            "user_type": "Employee",
+            "campus_relation_data": [
+              {
+                "campus_group_id": "6758226c1585ffbcadf07165",
+                "campus_group_name": "Mafatlal Group of School ",
+                "tracking_project_id": 16,
+                "campus_group_url": "My_School/School/1b477209-ec9c-4945-b894-595d26f8a782.jpeg",
+                "css": {
+                  "--primary-color": "#004392",
+                  "--secondary-color": "#0058cb",
+                  "--form-border": "#0043922e",
+                  "--form-bg": "#0043920a",
+                  "--font-size": "14px",
+                  "--font-color": "#33363b",
+                  "--label-color": "#212529"
+                },
+                "parent_dashboard": "",
+                "principal_dashboard": "todo",
+                "student_dashboard": "",
+                "teacher_dashboard": "todo",
+                "is_platform_group": "Yes",
+                "campus_designation_id": "67582f567432c0d5783dedcd",
+                "is_super_adm": 0,
+                "is_head": 0,
+                "status": "Active",
+                "board_id": "c402bf7d-31f0-11ee-ad79-00ff1480a0ba"
+              }
+            ]
+          }
+        ],
+        "msg": "Success"
+      }
+    ]
+  },
+  "campus_onboarding_ms/getCampusDesignation": {
+    "requests": [
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd",
+        "is_listing": "left"
+      },
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd",
+        "is_listing": "left"
+      },
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd",
+        "is_listing": "left"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "68c255343dca7e1306b89a49",
+            "campus_module_id": "68c255343dca7e1306b89a49",
+            "mod_name": "TO-DO",
+            "mod_priority": 1,
+            "is_mandatory": 1,
+            "mod_icon": "fact_check",
+            "mod_icon_url": null,
+            "module_menu": [
+              {
+                "_id": "68c255343dca7e1306b89a4a",
+                "module_menu_id": "68c255343dca7e1306b89a4a",
+                "mod_menu_name": "TO-DO",
+                "mod_menu_url": "/todo",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "list_alt",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "6530f541348b25183ea3b290",
+            "campus_module_id": "6530f541348b25183ea3b290",
+            "mod_name": "Curriculum",
+            "mod_priority": 4,
+            "is_mandatory": 1,
+            "mod_icon": "menu_book",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "66e1422260e7874adf0415d1",
+                "module_menu_id": "66e1422260e7874adf0415d1",
+                "mod_menu_name": "Chapter/Topic",
+                "mod_menu_url": "/chapter-topic",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "folder_zip",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66e1422260e7874adf0415d2",
+                "module_menu_id": "66e1422260e7874adf0415d2",
+                "mod_menu_name": "Content Library",
+                "mod_menu_url": "/contentlibrary",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "folder_match",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2bb8484cea03832ab028a",
+                "module_menu_id": "66f2bb8484cea03832ab028a",
+                "mod_menu_name": "Question Bank",
+                "mod_menu_url": "/questionbank",
+                "mod_menu_priority": 4,
+                "mod_menu_icon": "two_pager",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653c9dfc06a22360bee0c6a9",
+            "campus_module_id": "653c9dfc06a22360bee0c6a9",
+            "mod_name": "Timetable",
+            "mod_priority": 5,
+            "is_mandatory": 0,
+            "mod_icon": "calendar_month",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653c9dfc06a22360bee0c6ab",
+                "module_menu_id": "653c9dfc06a22360bee0c6ab",
+                "mod_menu_name": "My Timetable",
+                "mod_menu_url": "/mytimetable",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "calendar_view_day",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653ca5a506a22360bee0c6b7",
+            "campus_module_id": "653ca5a506a22360bee0c6b7",
+            "mod_name": "Lesson",
+            "mod_priority": 6,
+            "is_mandatory": 0,
+            "mod_icon": "pages",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653ca5a506a22360bee0c6bb",
+                "module_menu_id": "653ca5a506a22360bee0c6bb",
+                "mod_menu_name": "Class Test",
+                "mod_menu_url": "/classtest",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "summarize",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "653ca5a506a22360bee0c6bc",
+                "module_menu_id": "653ca5a506a22360bee0c6bc",
+                "mod_menu_name": "Worksheet",
+                "mod_menu_url": "/assignment",
+                "mod_menu_priority": 4,
+                "mod_menu_icon": "assignment_add",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2ba3584cea03832ab024b",
+                "module_menu_id": "66f2ba3584cea03832ab024b",
+                "mod_menu_name": "Doubt",
+                "mod_menu_url": "/doubt",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "psychology_alt",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2ba3584cea03832ab024c",
+                "module_menu_id": "66f2ba3584cea03832ab024c",
+                "mod_menu_name": "Collaboration",
+                "mod_menu_url": "/collaboration",
+                "mod_menu_priority": 3,
+                "mod_menu_icon": "groups",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "67e7dcbf9be9d681c99a9162",
+                "module_menu_id": "67e7dcbf9be9d681c99a9162",
+                "mod_menu_name": "Lesson Plan",
+                "mod_menu_url": "/lesson-plan",
+                "mod_menu_priority": 24,
+                "mod_menu_icon": "book_ribbon",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653ca63606a22360bee0c6c2",
+            "campus_module_id": "653ca63606a22360bee0c6c2",
+            "mod_name": "Information",
+            "mod_priority": 9,
+            "is_mandatory": 0,
+            "mod_icon": "lightbulb",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653ca63606a22360bee0c6c6",
+                "module_menu_id": "653ca63606a22360bee0c6c6",
+                "mod_menu_name": "Announcement",
+                "mod_menu_url": "/announcement",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "brand_awareness",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "68c255343dca7e1306b89a49",
+            "campus_module_id": "68c255343dca7e1306b89a49",
+            "mod_name": "TO-DO",
+            "mod_priority": 1,
+            "is_mandatory": 1,
+            "mod_icon": "fact_check",
+            "mod_icon_url": null,
+            "module_menu": [
+              {
+                "_id": "68c255343dca7e1306b89a4a",
+                "module_menu_id": "68c255343dca7e1306b89a4a",
+                "mod_menu_name": "TO-DO",
+                "mod_menu_url": "/todo",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "list_alt",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "6530f541348b25183ea3b290",
+            "campus_module_id": "6530f541348b25183ea3b290",
+            "mod_name": "Curriculum",
+            "mod_priority": 4,
+            "is_mandatory": 1,
+            "mod_icon": "menu_book",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "66e1422260e7874adf0415d1",
+                "module_menu_id": "66e1422260e7874adf0415d1",
+                "mod_menu_name": "Chapter/Topic",
+                "mod_menu_url": "/chapter-topic",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "folder_zip",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66e1422260e7874adf0415d2",
+                "module_menu_id": "66e1422260e7874adf0415d2",
+                "mod_menu_name": "Content Library",
+                "mod_menu_url": "/contentlibrary",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "folder_match",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2bb8484cea03832ab028a",
+                "module_menu_id": "66f2bb8484cea03832ab028a",
+                "mod_menu_name": "Question Bank",
+                "mod_menu_url": "/questionbank",
+                "mod_menu_priority": 4,
+                "mod_menu_icon": "two_pager",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653c9dfc06a22360bee0c6a9",
+            "campus_module_id": "653c9dfc06a22360bee0c6a9",
+            "mod_name": "Timetable",
+            "mod_priority": 5,
+            "is_mandatory": 0,
+            "mod_icon": "calendar_month",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653c9dfc06a22360bee0c6ab",
+                "module_menu_id": "653c9dfc06a22360bee0c6ab",
+                "mod_menu_name": "My Timetable",
+                "mod_menu_url": "/mytimetable",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "calendar_view_day",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653ca5a506a22360bee0c6b7",
+            "campus_module_id": "653ca5a506a22360bee0c6b7",
+            "mod_name": "Lesson",
+            "mod_priority": 6,
+            "is_mandatory": 0,
+            "mod_icon": "pages",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653ca5a506a22360bee0c6bb",
+                "module_menu_id": "653ca5a506a22360bee0c6bb",
+                "mod_menu_name": "Class Test",
+                "mod_menu_url": "/classtest",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "summarize",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "653ca5a506a22360bee0c6bc",
+                "module_menu_id": "653ca5a506a22360bee0c6bc",
+                "mod_menu_name": "Worksheet",
+                "mod_menu_url": "/assignment",
+                "mod_menu_priority": 4,
+                "mod_menu_icon": "assignment_add",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2ba3584cea03832ab024b",
+                "module_menu_id": "66f2ba3584cea03832ab024b",
+                "mod_menu_name": "Doubt",
+                "mod_menu_url": "/doubt",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "psychology_alt",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2ba3584cea03832ab024c",
+                "module_menu_id": "66f2ba3584cea03832ab024c",
+                "mod_menu_name": "Collaboration",
+                "mod_menu_url": "/collaboration",
+                "mod_menu_priority": 3,
+                "mod_menu_icon": "groups",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "67e7dcbf9be9d681c99a9162",
+                "module_menu_id": "67e7dcbf9be9d681c99a9162",
+                "mod_menu_name": "Lesson Plan",
+                "mod_menu_url": "/lesson-plan",
+                "mod_menu_priority": 24,
+                "mod_menu_icon": "book_ribbon",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653ca63606a22360bee0c6c2",
+            "campus_module_id": "653ca63606a22360bee0c6c2",
+            "mod_name": "Information",
+            "mod_priority": 9,
+            "is_mandatory": 0,
+            "mod_icon": "lightbulb",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653ca63606a22360bee0c6c6",
+                "module_menu_id": "653ca63606a22360bee0c6c6",
+                "mod_menu_name": "Announcement",
+                "mod_menu_url": "/announcement",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "brand_awareness",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "68c255343dca7e1306b89a49",
+            "campus_module_id": "68c255343dca7e1306b89a49",
+            "mod_name": "TO-DO",
+            "mod_priority": 1,
+            "is_mandatory": 1,
+            "mod_icon": "fact_check",
+            "mod_icon_url": null,
+            "module_menu": [
+              {
+                "_id": "68c255343dca7e1306b89a4a",
+                "module_menu_id": "68c255343dca7e1306b89a4a",
+                "mod_menu_name": "TO-DO",
+                "mod_menu_url": "/todo",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "list_alt",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "6530f541348b25183ea3b290",
+            "campus_module_id": "6530f541348b25183ea3b290",
+            "mod_name": "Curriculum",
+            "mod_priority": 4,
+            "is_mandatory": 1,
+            "mod_icon": "menu_book",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "66e1422260e7874adf0415d1",
+                "module_menu_id": "66e1422260e7874adf0415d1",
+                "mod_menu_name": "Chapter/Topic",
+                "mod_menu_url": "/chapter-topic",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "folder_zip",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66e1422260e7874adf0415d2",
+                "module_menu_id": "66e1422260e7874adf0415d2",
+                "mod_menu_name": "Content Library",
+                "mod_menu_url": "/contentlibrary",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "folder_match",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2bb8484cea03832ab028a",
+                "module_menu_id": "66f2bb8484cea03832ab028a",
+                "mod_menu_name": "Question Bank",
+                "mod_menu_url": "/questionbank",
+                "mod_menu_priority": 4,
+                "mod_menu_icon": "two_pager",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653c9dfc06a22360bee0c6a9",
+            "campus_module_id": "653c9dfc06a22360bee0c6a9",
+            "mod_name": "Timetable",
+            "mod_priority": 5,
+            "is_mandatory": 0,
+            "mod_icon": "calendar_month",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653c9dfc06a22360bee0c6ab",
+                "module_menu_id": "653c9dfc06a22360bee0c6ab",
+                "mod_menu_name": "My Timetable",
+                "mod_menu_url": "/mytimetable",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "calendar_view_day",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653ca5a506a22360bee0c6b7",
+            "campus_module_id": "653ca5a506a22360bee0c6b7",
+            "mod_name": "Lesson",
+            "mod_priority": 6,
+            "is_mandatory": 0,
+            "mod_icon": "pages",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653ca5a506a22360bee0c6bb",
+                "module_menu_id": "653ca5a506a22360bee0c6bb",
+                "mod_menu_name": "Class Test",
+                "mod_menu_url": "/classtest",
+                "mod_menu_priority": 1,
+                "mod_menu_icon": "summarize",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "653ca5a506a22360bee0c6bc",
+                "module_menu_id": "653ca5a506a22360bee0c6bc",
+                "mod_menu_name": "Worksheet",
+                "mod_menu_url": "/assignment",
+                "mod_menu_priority": 4,
+                "mod_menu_icon": "assignment_add",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2ba3584cea03832ab024b",
+                "module_menu_id": "66f2ba3584cea03832ab024b",
+                "mod_menu_name": "Doubt",
+                "mod_menu_url": "/doubt",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "psychology_alt",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "66f2ba3584cea03832ab024c",
+                "module_menu_id": "66f2ba3584cea03832ab024c",
+                "mod_menu_name": "Collaboration",
+                "mod_menu_url": "/collaboration",
+                "mod_menu_priority": 3,
+                "mod_menu_icon": "groups",
+                "mod_menu_icon_url": "",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              },
+              {
+                "_id": "67e7dcbf9be9d681c99a9162",
+                "module_menu_id": "67e7dcbf9be9d681c99a9162",
+                "mod_menu_name": "Lesson Plan",
+                "mod_menu_url": "/lesson-plan",
+                "mod_menu_priority": 24,
+                "mod_menu_icon": "book_ribbon",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          },
+          {
+            "_id": "653ca63606a22360bee0c6c2",
+            "campus_module_id": "653ca63606a22360bee0c6c2",
+            "mod_name": "Information",
+            "mod_priority": 9,
+            "is_mandatory": 0,
+            "mod_icon": "lightbulb",
+            "mod_icon_url": "https://img.icons8.com/retro/32/open-box.png",
+            "module_menu": [
+              {
+                "_id": "653ca63606a22360bee0c6c6",
+                "module_menu_id": "653ca63606a22360bee0c6c6",
+                "mod_menu_name": "Announcement",
+                "mod_menu_url": "/announcement",
+                "mod_menu_priority": 2,
+                "mod_menu_icon": "brand_awareness",
+                "mod_menu_icon_url": "https://img.icons8.com/ios/50/domain--v1.png",
+                "type": "Manage",
+                "isView": "Yes",
+                "isAdd": "Yes",
+                "isEdit": "Yes",
+                "isDelete": "Yes"
+              }
+            ]
+          }
+        ],
+        "msg": "Success"
+      }
+    ]
+  },
+  "campus_onboarding_ms/getCampusGroupById": {
+    "requests": [
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165"
+      },
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165"
+      },
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "6758226c1585ffbcadf07165",
+            "group_name": "Mafatlal Group of School ",
+            "logo": "My_School/School/1b477209-ec9c-4945-b894-595d26f8a782.jpeg",
+            "group_type": "SubGroup",
+            "tracking_project_id": 16,
+            "grp_status": "Active",
+            "sub_group": [],
+            "session": "Group Wise",
+            "is_vridhee_group": "Yes",
+            "css": {
+              "--primary-color": "#004392",
+              "--secondary-color": "#0058cb",
+              "--form-border": "#0043922e",
+              "--form-bg": "#0043920a",
+              "--font-size": "14px",
+              "--font-color": "#33363b",
+              "--label-color": "#212529"
+            },
+            "html5_base_url": "https://content.mafatlaltrack.com/tripura/Tripura/HTML5/",
+            "parent_dashboard": "",
+            "principal_dashboard": "todo",
+            "student_dashboard": "",
+            "superadmin_dashboard": "",
+            "teacher_dashboard": "todo",
+            "collection_name": {
+              "library_book_apply": "library_book_apply_201_285",
+              "stu_fee_config": "stu_fee_config_201_285",
+              "act_summary": "activity_summary_1_5",
+              "library_book": "library_book_201_285"
+            },
+            "is_platform_group": "Yes",
+            "board_id": "c402bf7d-31f0-11ee-ad79-00ff1480a0ba",
+            "login_type": "multi",
+            "campus_group_id": "6758226c1585ffbcadf07165"
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "6758226c1585ffbcadf07165",
+            "group_name": "Mafatlal Group of School ",
+            "logo": "My_School/School/1b477209-ec9c-4945-b894-595d26f8a782.jpeg",
+            "group_type": "SubGroup",
+            "tracking_project_id": 16,
+            "grp_status": "Active",
+            "sub_group": [],
+            "session": "Group Wise",
+            "is_vridhee_group": "Yes",
+            "css": {
+              "--primary-color": "#004392",
+              "--secondary-color": "#0058cb",
+              "--form-border": "#0043922e",
+              "--form-bg": "#0043920a",
+              "--font-size": "14px",
+              "--font-color": "#33363b",
+              "--label-color": "#212529"
+            },
+            "html5_base_url": "https://content.mafatlaltrack.com/tripura/Tripura/HTML5/",
+            "parent_dashboard": "",
+            "principal_dashboard": "todo",
+            "student_dashboard": "",
+            "superadmin_dashboard": "",
+            "teacher_dashboard": "todo",
+            "collection_name": {
+              "library_book_apply": "library_book_apply_201_285",
+              "stu_fee_config": "stu_fee_config_201_285",
+              "act_summary": "activity_summary_1_5",
+              "library_book": "library_book_201_285"
+            },
+            "is_platform_group": "Yes",
+            "board_id": "c402bf7d-31f0-11ee-ad79-00ff1480a0ba",
+            "login_type": "multi",
+            "campus_group_id": "6758226c1585ffbcadf07165"
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "6758226c1585ffbcadf07165",
+            "group_name": "Mafatlal Group of School ",
+            "logo": "My_School/School/1b477209-ec9c-4945-b894-595d26f8a782.jpeg",
+            "group_type": "SubGroup",
+            "tracking_project_id": 16,
+            "grp_status": "Active",
+            "sub_group": [],
+            "session": "Group Wise",
+            "is_vridhee_group": "Yes",
+            "css": {
+              "--primary-color": "#004392",
+              "--secondary-color": "#0058cb",
+              "--form-border": "#0043922e",
+              "--form-bg": "#0043920a",
+              "--font-size": "14px",
+              "--font-color": "#33363b",
+              "--label-color": "#212529"
+            },
+            "html5_base_url": "https://content.mafatlaltrack.com/tripura/Tripura/HTML5/",
+            "parent_dashboard": "",
+            "principal_dashboard": "todo",
+            "student_dashboard": "",
+            "superadmin_dashboard": "",
+            "teacher_dashboard": "todo",
+            "collection_name": {
+              "library_book_apply": "library_book_apply_201_285",
+              "stu_fee_config": "stu_fee_config_201_285",
+              "act_summary": "activity_summary_1_5",
+              "library_book": "library_book_201_285"
+            },
+            "is_platform_group": "Yes",
+            "board_id": "c402bf7d-31f0-11ee-ad79-00ff1480a0ba",
+            "login_type": "multi",
+            "campus_group_id": "6758226c1585ffbcadf07165"
+          }
+        ],
+        "msg": "Success"
+      }
+    ]
+  },
+  "campus_onboarding_ms/getCampusesListingData": {
+    "requests": [
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "user_type": "Emp"
+      },
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "user_type": "Emp"
+      },
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "user_type": "Emp"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "campus_id": "6758226c1585ffbcadf0716b",
+            "campus_name": "Mafatlal Academy ",
+            "campus_type": "School",
+            "tracking_institute_id": 750
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "campus_id": "6758226c1585ffbcadf0716b",
+            "campus_name": "Mafatlal Academy ",
+            "campus_type": "School",
+            "tracking_institute_id": 750
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "campus_id": "6758226c1585ffbcadf0716b",
+            "campus_name": "Mafatlal Academy ",
+            "campus_type": "School",
+            "tracking_institute_id": 750
+          }
+        ],
+        "msg": "Success"
+      }
+    ]
+  },
+  "campus_dashboard_module_ms/getLangauges": {
+    "requests": [
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a"
+      },
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a"
+      },
+      {
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "lang_id": "9a28ea07-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "English",
+            "seq": 1,
+            "is_default": true
+          },
+          {
+            "lang_id": "cf084adf-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Urdu",
+            "seq": 2,
+            "is_default": false
+          },
+          {
+            "lang_id": "e12bc8f9-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Marathi",
+            "seq": 3,
+            "is_default": false
+          },
+          {
+            "lang_id": "f5dbd8b1-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Tamil",
+            "seq": 4,
+            "is_default": false
+          },
+          {
+            "lang_id": "2f6f3015-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Kannada",
+            "seq": 5,
+            "is_default": false
+          },
+          {
+            "lang_id": "3c7f35b4-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Hindi",
+            "seq": 6,
+            "is_default": false
+          },
+          {
+            "lang_id": "50dcf9c5-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Bengali",
+            "seq": 7,
+            "is_default": false
+          },
+          {
+            "lang_id": "707417ed-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Malayalam",
+            "seq": 8,
+            "is_default": false
+          },
+          {
+            "lang_id": "8dca991d-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Punjabi",
+            "seq": 9,
+            "is_default": false
+          },
+          {
+            "lang_id": "a23ce3b3-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Telugu",
+            "seq": 10,
+            "is_default": false
+          },
+          {
+            "lang_id": "3b40499d-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Odia",
+            "seq": 11,
+            "is_default": false
+          },
+          {
+            "lang_id": "60928965-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Nepali",
+            "seq": 12,
+            "is_default": false
+          },
+          {
+            "lang_id": "9141f506-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Assamese",
+            "seq": 13,
+            "is_default": false
+          },
+          {
+            "lang_id": "a3dc396a-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Gujarati",
+            "seq": 14,
+            "is_default": false
+          },
+          {
+            "lang_id": "7448665e-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Arabic",
+            "seq": 15,
+            "is_default": false
+          },
+          {
+            "lang_id": "b9a6fb47-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Spanish",
+            "seq": 16,
+            "is_default": false
+          },
+          {
+            "lang_id": "08cc185c-ecf9-11ee-b34a-00ff1480a0ba",
+            "lang_name": "French",
+            "seq": 17,
+            "is_default": false
+          },
+          {
+            "lang_id": "85f4944f-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Russian",
+            "seq": 18,
+            "is_default": false
+          },
+          {
+            "lang_id": "e2770181-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "German",
+            "seq": 19,
+            "is_default": false
+          },
+          {
+            "lang_id": "56613ba0-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Korean",
+            "seq": 20,
+            "is_default": false
+          },
+          {
+            "lang_id": "d6ae6d29-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Portuguese",
+            "seq": 21,
+            "is_default": false
+          },
+          {
+            "lang_id": "81090e84-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Vietnamese",
+            "seq": 22,
+            "is_default": false
+          },
+          {
+            "lang_id": "b0fef5a2-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Latin",
+            "seq": 23,
+            "is_default": false
+          },
+          {
+            "lang_id": "657ba809-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Afrikaans",
+            "seq": 24,
+            "is_default": false
+          },
+          {
+            "lang_id": "47eef70d-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Japanese",
+            "seq": 25,
+            "is_default": false
+          }
+        ],
+        "message": "Languages fetched successfully"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "lang_id": "9a28ea07-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "English",
+            "seq": 1,
+            "is_default": true
+          },
+          {
+            "lang_id": "cf084adf-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Urdu",
+            "seq": 2,
+            "is_default": false
+          },
+          {
+            "lang_id": "e12bc8f9-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Marathi",
+            "seq": 3,
+            "is_default": false
+          },
+          {
+            "lang_id": "f5dbd8b1-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Tamil",
+            "seq": 4,
+            "is_default": false
+          },
+          {
+            "lang_id": "2f6f3015-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Kannada",
+            "seq": 5,
+            "is_default": false
+          },
+          {
+            "lang_id": "3c7f35b4-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Hindi",
+            "seq": 6,
+            "is_default": false
+          },
+          {
+            "lang_id": "50dcf9c5-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Bengali",
+            "seq": 7,
+            "is_default": false
+          },
+          {
+            "lang_id": "707417ed-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Malayalam",
+            "seq": 8,
+            "is_default": false
+          },
+          {
+            "lang_id": "8dca991d-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Punjabi",
+            "seq": 9,
+            "is_default": false
+          },
+          {
+            "lang_id": "a23ce3b3-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Telugu",
+            "seq": 10,
+            "is_default": false
+          },
+          {
+            "lang_id": "3b40499d-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Odia",
+            "seq": 11,
+            "is_default": false
+          },
+          {
+            "lang_id": "60928965-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Nepali",
+            "seq": 12,
+            "is_default": false
+          },
+          {
+            "lang_id": "9141f506-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Assamese",
+            "seq": 13,
+            "is_default": false
+          },
+          {
+            "lang_id": "a3dc396a-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Gujarati",
+            "seq": 14,
+            "is_default": false
+          },
+          {
+            "lang_id": "7448665e-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Arabic",
+            "seq": 15,
+            "is_default": false
+          },
+          {
+            "lang_id": "b9a6fb47-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Spanish",
+            "seq": 16,
+            "is_default": false
+          },
+          {
+            "lang_id": "08cc185c-ecf9-11ee-b34a-00ff1480a0ba",
+            "lang_name": "French",
+            "seq": 17,
+            "is_default": false
+          },
+          {
+            "lang_id": "85f4944f-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Russian",
+            "seq": 18,
+            "is_default": false
+          },
+          {
+            "lang_id": "e2770181-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "German",
+            "seq": 19,
+            "is_default": false
+          },
+          {
+            "lang_id": "56613ba0-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Korean",
+            "seq": 20,
+            "is_default": false
+          },
+          {
+            "lang_id": "d6ae6d29-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Portuguese",
+            "seq": 21,
+            "is_default": false
+          },
+          {
+            "lang_id": "81090e84-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Vietnamese",
+            "seq": 22,
+            "is_default": false
+          },
+          {
+            "lang_id": "b0fef5a2-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Latin",
+            "seq": 23,
+            "is_default": false
+          },
+          {
+            "lang_id": "657ba809-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Afrikaans",
+            "seq": 24,
+            "is_default": false
+          },
+          {
+            "lang_id": "47eef70d-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Japanese",
+            "seq": 25,
+            "is_default": false
+          }
+        ],
+        "message": "Languages fetched successfully"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "lang_id": "9a28ea07-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "English",
+            "seq": 1,
+            "is_default": true
+          },
+          {
+            "lang_id": "cf084adf-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Urdu",
+            "seq": 2,
+            "is_default": false
+          },
+          {
+            "lang_id": "e12bc8f9-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Marathi",
+            "seq": 3,
+            "is_default": false
+          },
+          {
+            "lang_id": "f5dbd8b1-2fa2-11ee-bb86-000c29539bc1",
+            "lang_name": "Tamil",
+            "seq": 4,
+            "is_default": false
+          },
+          {
+            "lang_id": "2f6f3015-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Kannada",
+            "seq": 5,
+            "is_default": false
+          },
+          {
+            "lang_id": "3c7f35b4-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Hindi",
+            "seq": 6,
+            "is_default": false
+          },
+          {
+            "lang_id": "50dcf9c5-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Bengali",
+            "seq": 7,
+            "is_default": false
+          },
+          {
+            "lang_id": "707417ed-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Malayalam",
+            "seq": 8,
+            "is_default": false
+          },
+          {
+            "lang_id": "8dca991d-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Punjabi",
+            "seq": 9,
+            "is_default": false
+          },
+          {
+            "lang_id": "a23ce3b3-2fa3-11ee-bb86-000c29539bc1",
+            "lang_name": "Telugu",
+            "seq": 10,
+            "is_default": false
+          },
+          {
+            "lang_id": "3b40499d-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Odia",
+            "seq": 11,
+            "is_default": false
+          },
+          {
+            "lang_id": "60928965-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Nepali",
+            "seq": 12,
+            "is_default": false
+          },
+          {
+            "lang_id": "9141f506-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Assamese",
+            "seq": 13,
+            "is_default": false
+          },
+          {
+            "lang_id": "a3dc396a-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Gujarati",
+            "seq": 14,
+            "is_default": false
+          },
+          {
+            "lang_id": "7448665e-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Arabic",
+            "seq": 15,
+            "is_default": false
+          },
+          {
+            "lang_id": "b9a6fb47-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Spanish",
+            "seq": 16,
+            "is_default": false
+          },
+          {
+            "lang_id": "08cc185c-ecf9-11ee-b34a-00ff1480a0ba",
+            "lang_name": "French",
+            "seq": 17,
+            "is_default": false
+          },
+          {
+            "lang_id": "85f4944f-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Russian",
+            "seq": 18,
+            "is_default": false
+          },
+          {
+            "lang_id": "e2770181-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "German",
+            "seq": 19,
+            "is_default": false
+          },
+          {
+            "lang_id": "56613ba0-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Korean",
+            "seq": 20,
+            "is_default": false
+          },
+          {
+            "lang_id": "d6ae6d29-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Portuguese",
+            "seq": 21,
+            "is_default": false
+          },
+          {
+            "lang_id": "81090e84-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Vietnamese",
+            "seq": 22,
+            "is_default": false
+          },
+          {
+            "lang_id": "b0fef5a2-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Latin",
+            "seq": 23,
+            "is_default": false
+          },
+          {
+            "lang_id": "657ba809-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Afrikaans",
+            "seq": 24,
+            "is_default": false
+          },
+          {
+            "lang_id": "47eef70d-ecf8-11ee-b34a-00ff1480a0ba",
+            "lang_name": "Japanese",
+            "seq": 25,
+            "is_default": false
+          }
+        ],
+        "message": "Languages fetched successfully"
+      }
+    ]
+  },
+  "campus_dashboard_module_ms/getActivityDasboard": {
+    "requests": [
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "subject_id": "",
+        "batch_id": "",
+        "campus_course_id": ""
+      },
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "subject_id": "",
+        "batch_id": "",
+        "campus_course_id": ""
+      },
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "subject_id": "",
+        "batch_id": "",
+        "campus_course_id": ""
+      },
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "subject_id": "",
+        "batch_id": "",
+        "campus_course_id": ""
+      },
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "subject_id": "",
+        "batch_id": "",
+        "campus_course_id": ""
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "690c409eec499bb3c5c3d76f",
+            "campus_group_id": "6758226c1585ffbcadf07165",
+            "tot_tea": 186,
+            "tot_tea_act": 35,
+            "tot_stu": 154,
+            "tot_stu_m": 86,
+            "tot_stu_f": 68,
+            "tot_stu_o": 0,
+            "tot_stu_act": 9,
+            "tot_cam": 2,
+            "tot_sub": 51,
+            "pre": 59,
+            "ab": 44,
+            "tot_t_perf_atn": 368,
+            "tot_t_pro_atn": 43,
+            "tot_t_eng_atn": 398,
+            "perf_per": 6.3256,
+            "pro_per": 9.8384,
+            "eng_per": 5.9045,
+            "t_con": 0,
+            "t_con_watch": 4156,
+            "t_watch_dur": 24420,
+            "avg_watch_dur": 6,
+            "pt_chal_g": 242,
+            "ct_byod_g": 100,
+            "wst_sub": 45,
+            "c_ask_rep": 84,
+            "co_per": [
+              {
+                "grd_id": "a17f9d23-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "8",
+                "grd_seq": 8,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4da"
+              },
+              {
+                "grd_id": "680f40dabd802daf2a822bb2",
+                "grd_name": "2",
+                "grd_seq": 2,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4db"
+              },
+              {
+                "grd_id": "c114adfe-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "10",
+                "grd_seq": 10,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4dc"
+              },
+              {
+                "grd_id": "b2f6496b-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "9",
+                "grd_seq": 9,
+                "perf_per": 1.1723,
+                "pro_per": 0.1254,
+                "eng_per": 0.8686,
+                "_id": "69171ac656c22a06e6cff4dd"
+              },
+              {
+                "grd_id": "92673410-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "7",
+                "grd_seq": 7,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4de"
+              },
+              {
+                "grd_id": "680f4038bd802daf2a822b16",
+                "grd_name": "1",
+                "grd_seq": 1,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4df"
+              },
+              {
+                "grd_id": "680f40eebd802daf2a822ced",
+                "grd_name": "4",
+                "grd_seq": 4,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4e0"
+              },
+              {
+                "grd_id": "80c7a75f-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "6",
+                "grd_seq": 6,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4e1"
+              },
+              {
+                "grd_id": "680f40f9bd802daf2a822d8c",
+                "grd_name": "5",
+                "grd_seq": 5,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4e2"
+              },
+              {
+                "grd_id": "680f40e5bd802daf2a822c4f",
+                "grd_name": "3",
+                "grd_seq": 3,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4e3"
+              }
+            ]
+          }
+        ],
+        "message": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "690c409eec499bb3c5c3d76f",
+            "campus_group_id": "6758226c1585ffbcadf07165",
+            "tot_tea": 186,
+            "tot_tea_act": 35,
+            "tot_stu": 154,
+            "tot_stu_m": 86,
+            "tot_stu_f": 68,
+            "tot_stu_o": 0,
+            "tot_stu_act": 9,
+            "tot_cam": 2,
+            "tot_sub": 51,
+            "pre": 59,
+            "ab": 44,
+            "tot_t_perf_atn": 368,
+            "tot_t_pro_atn": 43,
+            "tot_t_eng_atn": 398,
+            "perf_per": 6.3256,
+            "pro_per": 9.8384,
+            "eng_per": 5.9045,
+            "t_con": 0,
+            "t_con_watch": 4156,
+            "t_watch_dur": 24420,
+            "avg_watch_dur": 6,
+            "pt_chal_g": 242,
+            "ct_byod_g": 100,
+            "wst_sub": 45,
+            "c_ask_rep": 84,
+            "co_per": [
+              {
+                "grd_id": "a17f9d23-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "8",
+                "grd_seq": 8,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4da"
+              },
+              {
+                "grd_id": "680f40dabd802daf2a822bb2",
+                "grd_name": "2",
+                "grd_seq": 2,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4db"
+              },
+              {
+                "grd_id": "c114adfe-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "10",
+                "grd_seq": 10,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4dc"
+              },
+              {
+                "grd_id": "b2f6496b-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "9",
+                "grd_seq": 9,
+                "perf_per": 1.1723,
+                "pro_per": 0.1254,
+                "eng_per": 0.8686,
+                "_id": "69171ac656c22a06e6cff4dd"
+              },
+              {
+                "grd_id": "92673410-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "7",
+                "grd_seq": 7,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4de"
+              },
+              {
+                "grd_id": "680f4038bd802daf2a822b16",
+                "grd_name": "1",
+                "grd_seq": 1,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4df"
+              },
+              {
+                "grd_id": "680f40eebd802daf2a822ced",
+                "grd_name": "4",
+                "grd_seq": 4,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4e0"
+              },
+              {
+                "grd_id": "80c7a75f-3060-11ee-bb86-000c29539bc1",
+                "grd_name": "6",
+                "grd_seq": 6,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4e1"
+              },
+              {
+                "grd_id": "680f40f9bd802daf2a822d8c",
+                "grd_name": "5",
+                "grd_seq": 5,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4e2"
+              },
+              {
+                "grd_id": "680f40e5bd802daf2a822c4f",
+                "grd_name": "3",
+                "grd_seq": 3,
+                "perf_per": 0,
+                "pro_per": 0,
+                "eng_per": 0,
+                "_id": "69171ac656c22a06e6cff4e3"
+              }
+            ]
+          }
+        ],
+        "message": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "690c409eec499bb3c5c3d77a",
+            "pre": 59,
+            "ab": 44,
+            "tot_t_perf_atn": 358,
+            "tot_t_pro_atn": 43,
+            "tot_t_eng_atn": 385,
+            "perf_per": 6.3256,
+            "pro_per": 9.8384,
+            "eng_per": 5.9045,
+            "t_con": 0,
+            "t_con_watch": 4156,
+            "t_watch_dur": 24420,
+            "avg_watch_dur": 6,
+            "pt_chal_g": 239,
+            "ct_byod_g": 100,
+            "wst_sub": 39,
+            "c_ask_rep": 77
+          }
+        ],
+        "message": "Success"
+      }
+    ]
+  },
+  "users/getUserOnboardData": {
+    "requests": [
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd",
+        "is_head": 0,
+        "is_super_adm": 0
+      },
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd",
+        "is_head": 0,
+        "is_super_adm": 0
+      },
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd",
+        "is_head": 0,
+        "is_super_adm": 0
+      }
+    ],
+    "responses": []
+  },
+  "campus_dashboard_module_ms/employeeCourseBatchSubjectList": {
+    "requests": [
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "designation_id": "67582f567432c0d5783dedcd",
+        "is_head": 0,
+        "is_super_adm": 0
+      }
+    ],
+    "responses": []
+  },
+  "campus_dashboard_module_ms/getHolisticDasboardData": {
+    "requests": [
+      {
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "designation_id": "67582f567432c0d5783dedcd",
+        "is_head": 0,
+        "is_super_adm": 0,
+        "chart_type": "per"
+      }
+    ],
+    "responses": []
+  },
+  "announcementinformation/getUnseenAnnouncementsV1": {
+    "requests": [
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_type": "Emp"
+      },
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_type": "Emp"
+      },
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_type": "Emp"
+      },
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_type": "Emp"
+      },
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_type": "Emp"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [],
+        "message": "No announcements found"
+      },
+      {
+        "status": 200,
+        "data": [],
+        "message": "No announcements found"
+      },
+      {
+        "status": 200,
+        "data": [],
+        "message": "No announcements found"
+      }
+    ]
+  },
+  "campus_onboarding_ms/getCampusSessions?courseSection=session_years": {
+    "requests": [
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "campus_group_id": "6758226c1585ffbcadf07165"
+      },
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "campus_group_id": "6758226c1585ffbcadf07165"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": null,
+            "session_years": [
+              "2025-2026",
+              "2024-2025"
+            ]
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": null,
+            "session_years": [
+              "2025-2026",
+              "2024-2025"
+            ]
+          }
+        ],
+        "msg": "Success"
+      }
+    ]
+  },
+  "campus_onboarding_ms/getCampusCourseBatch?courseSection=courseNames": {
+    "requests": [
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd"
+      },
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "675831571585ffbcadf0b82a",
+            "course_name": "IX",
+            "course_order": 9,
+            "is_academic_course": 1,
+            "cat_id": "64cb74c7262436037f30398d",
+            "cat_name": "Academic",
+            "grade_id": "b2f6496b-3060-11ee-bb86-000c29539bc1",
+            "grade_val": "9"
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "_id": "675831571585ffbcadf0b82a",
+            "course_name": "IX",
+            "course_order": 9,
+            "is_academic_course": 1,
+            "cat_id": "64cb74c7262436037f30398d",
+            "cat_name": "Academic",
+            "grade_id": "b2f6496b-3060-11ee-bb86-000c29539bc1",
+            "grade_val": "9"
+          }
+        ],
+        "msg": "Success"
+      }
+    ]
+  },
+  "campus_onboarding_ms/getCampusCourseBatch?courseSection=batch$names": {
+    "requests": [
+      {
+        "campus_course_id": "675831571585ffbcadf0b82a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "user_type": "Emp",
+        "designation_id": "67582f567432c0d5783dedcd"
+      },
+      {
+        "campus_course_id": "675831571585ffbcadf0b82a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "user_type": "Emp",
+        "designation_id": "67582f567432c0d5783dedcd"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "campus_batch_id": "6758316f1585ffbcadf0b8dd",
+            "batch_name": "A"
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "campus_batch_id": "6758316f1585ffbcadf0b8dd",
+            "batch_name": "A"
+          }
+        ],
+        "msg": "Success"
+      }
+    ]
+  },
+  "campus_onboarding_ms/getCampusCourseBatch?courseSection=subject_names": {
+    "requests": [
+      {
+        "campus_course_id": "675831571585ffbcadf0b82a",
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd"
+      },
+      {
+        "campus_course_id": "675831571585ffbcadf0b82a",
+        "user_type": "Emp",
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "designation_id": "67582f567432c0d5783dedcd"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": [
+          {
+            "subject_id": "65b7f2466d62b9d8d66276a2",
+            "subject_name": "Mathematics",
+            "is_campus_subject": 0
+          },
+          {
+            "subject_id": "65ba59aef233a16d51f7163d",
+            "subject_name": "Science",
+            "is_campus_subject": 0
+          }
+        ],
+        "msg": "Success"
+      },
+      {
+        "status": 200,
+        "data": [
+          {
+            "subject_id": "65b7f2466d62b9d8d66276a2",
+            "subject_name": "Mathematics",
+            "is_campus_subject": 0
+          },
+          {
+            "subject_id": "65ba59aef233a16d51f7163d",
+            "subject_name": "Science",
+            "is_campus_subject": 0
+          }
+        ],
+        "msg": "Success"
+      }
+    ]
+  },
+  "campus_dashboard_module_ms/getDefaultAndCampusChapters": {
+    "requests": [
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "sub_id": "65ba59aef233a16d51f7163d",
+        "campus_course_id": "675831571585ffbcadf0b82a",
+        "batch_id": "6758316f1585ffbcadf0b8dd",
+        "flag": "syllabus_completed",
+        "test_type": "class_test",
+        "campus_group_id": "6758226c1585ffbcadf07165"
+      },
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "sub_id": "65ba59aef233a16d51f7163d",
+        "campus_course_id": "675831571585ffbcadf0b82a",
+        "batch_id": "6758316f1585ffbcadf0b8dd",
+        "c_test_id": "69db490d1477739442e42db8",
+        "flag": "syllabus_completed",
+        "test_type": "class_test",
+        "campus_group_id": "6758226c1585ffbcadf07165"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": {
+          "defaultChapters": [
+            {
+              "chapter_id": "67ff3d8b2613c0dfa77258a5",
+              "chapter_name": "Matter in Our Surroundings",
+              "no_of_test_used": 16
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa77258d6",
+              "chapter_name": "Sound",
+              "no_of_test_used": 93
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa77258eb",
+              "chapter_name": "Structure of the Atom",
+              "no_of_test_used": 0
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa77258f8",
+              "chapter_name": "The Fundamental Unit of Life",
+              "no_of_test_used": 0
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa772590b",
+              "chapter_name": "Tissues",
+              "no_of_test_used": 5
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa7725918",
+              "chapter_name": "Motion",
+              "no_of_test_used": 0
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa7725927",
+              "chapter_name": "Force and Laws of Motion",
+              "no_of_test_used": 0
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa772593a",
+              "chapter_name": "Gravitation",
+              "no_of_test_used": 0
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa772594d",
+              "chapter_name": "Work and Energy",
+              "no_of_test_used": 0
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa7725ae1",
+              "chapter_name": "Atoms And Molecules",
+              "no_of_test_used": 0
+            },
+            {
+              "chapter_id": "67ff3d8b2613c0dfa7725af0",
+              "chapter_name": "Is Matter Around us Pure ?",
+              "no_of_test_used": 13
+            },
+            {
+              "chapter_id": "6891da2d559e887fe205a356",
+              "chapter_name": "Improvement in Food Resources",
+              "no_of_test_used": 0
+            }
+          ],
+          "campusChapters": []
+        },
+        "message": "Success"
+      },
+      {
+        "status": 200,
+        "data": {
+          "defaultChapters": [
+            {
+              "chapter_id": "67ff3d8b2613c0dfa77258d6",
+              "chapter_name": "Sound",
+              "no_of_test_used": 93
+            }
+          ],
+          "campusChapters": []
+        },
+        "message": "Success"
+      }
+    ]
+  },
+  "campus_dashboard_module_ms/addClassTest": {
+    "requests": [
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "course_id": "675831571585ffbcadf0b82a",
+        "batch_id": "6758316f1585ffbcadf0b8dd",
+        "subject_id": "65ba59aef233a16d51f7163d",
+        "exam_name": "Sound Chapter Test DEBUG",
+        "exam_date": "2026-05-27",
+        "exam_duration": 600,
+        "start_time": "22:00",
+        "end_time": "22:10",
+        "result_date": "2026-05-27",
+        "result_time": "",
+        "number_of_questions": 5,
+        "total_marks": 10,
+        "is_online": 1,
+        "exam_instruction": "<ol><li>Log in at least 10 minutes before the test starts.</li><li>Make sure you have a stable internet connection throughout the test.</li><li>Use tablet, laptop or desktop (not mobile phone unless approved).</li><li>Choose a quiet, well-lit space with no distractions around you.</li><li>Do not refresh or switch tabs during the test (may be flagged as misconduct).</li><li>Keep track of time and submit the test before it ends.<ol><li>Switching tabs, turning off your camera, or any suspicious activity may result in test cancellation.</li></ol></li><li>Take a screenshot or photo of your submission confirmation, if required.</li><li>No communication with others is allowed during the test.</li><li>If there is a technical issue, inform your invigilator immediately and wait for instructions.</li></ol>",
+        "test_type": "Class Test",
+        "is_notification": 0,
+        "language": "English",
+        "class_test_id": "",
+        "session": "2025-2026",
+        "chap_ids": [
+          "67ff3d8b2613c0dfa77258d6"
+        ],
+        "course_name": "IX",
+        "batch_name": "A",
+        "sub_name": "Science",
+        "campus_group_id": "6758226c1585ffbcadf07165",
+        "user_id": "67582fdb1585ffbcadf0ac3a"
+      }
+    ],
+    "responses": [
+      {
+        "status": 201,
+        "data": "69db490d1477739442e42db8",
+        "message": "done"
+      }
+    ]
+  },
+  "campus_dashboard_module_ms/getClassTestV1?classParams=classTest": {
+    "requests": [
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "session": "2025-2026",
+        "class_test_id": "69db490d1477739442e42db8",
+        "flag": "question_data"
+      }
+    ],
+    "responses": [
+      {
+        "status": 200,
+        "data": {
+          "campus_group_id": "6758226c1585ffbcadf07165",
+          "campus_id": "6758226c1585ffbcadf0716b",
+          "course_id": "675831571585ffbcadf0b82a",
+          "batch_id": "6758316f1585ffbcadf0b8dd",
+          "user_id": "67582fdb1585ffbcadf0ac3a",
+          "subject_id": "65ba59aef233a16d51f7163d",
+          "exam_name": "Sound Chapter Test DEBUG",
+          "exam_date": "2026-05-27T00:00:00.000Z",
+          "exam_duration": 600,
+          "start_time": "22:00",
+          "end_time": "22:10",
+          "result_date": "2026-05-27T00:00:00.000Z",
+          "result_time": "",
+          "number_of_questions": 5,
+          "total_marks": 10,
+          "is_online": 1,
+          "exam_instruction": "<ol><li>Log in at least 10 minutes before the test starts.</li><li>Make sure you have a stable internet connection throughout the test.</li><li>Use tablet, laptop or desktop (not mobile phone unless approved).</li><li>Choose a quiet, well-lit space with no distractions around you.</li><li>Do not refresh or switch tabs during the test (may be flagged as misconduct).</li><li>Keep track of time and submit the test before it ends.<ol><li>Switching tabs, turning off your camera, or any suspicious activity may result in test cancellation.</li></ol></li><li>Take a screenshot or photo of your submission confirmation, if required.</li><li>No communication with others is allowed during the test.</li><li>If there is a technical issue, inform your invigilator immediately and wait for instructions.</li></ol>",
+          "cls_test_status": 1,
+          "test_type": "Class Test",
+          "competitive_campus_ids": [],
+          "chap_ids": [
+            "67ff3d8b2613c0dfa77258d6"
+          ],
+          "is_notification": 0,
+          "language": "English",
+          "createdAt": "2026-04-12T07:26:05.138Z",
+          "updatedAt": "2026-04-12T07:26:05.138Z",
+          "__v": 0,
+          "class_test_id": "69db490d1477739442e42db8",
+          "selected_questions": 0,
+          "selected_time": 0,
+          "selected_marks": 0,
+          "t_ids": [],
+          "course_name": "IX",
+          "batch_name": "A",
+          "sub_name": "Science",
+          "question_arr": []
+        },
+        "message": "Success"
+      }
+    ]
+  },
+  "campus_dashboard_module_ms/getClassTestV1?classParams=": {
+    "requests": [
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "session": "2025-2026",
+        "course_id": "675831571585ffbcadf0b82a",
+        "batch_id": "6758316f1585ffbcadf0b8dd",
+        "sub_ids": [
+          "65b7f2466d62b9d8d66276a2"
+        ],
+        "page": 1,
+        "limit": 10,
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "cls_test_status": 1,
+        "test_type": "class_test"
+      },
+      {
+        "campus_id": "6758226c1585ffbcadf0716b",
+        "session": "2025-2026",
+        "course_id": "675831571585ffbcadf0b82a",
+        "batch_id": "6758316f1585ffbcadf0b8dd",
+        "sub_ids": [
+          "65ba59aef233a16d51f7163d"
+        ],
+        "page": 1,
+        "limit": 10,
+        "user_id": "67582fdb1585ffbcadf0ac3a",
+        "cls_test_status": 1,
+        "test_type": "class_test"
+      }
+    ],
+    "responses": [
+      {
+        "status": 404,
+        "data": {},
+        "message": "No data Available"
+      },
+      {
+        "status": 200,
+        "data": {
+          "totalCount": 1,
+          "classTestData": [
+            {
+              "_id": "69db490d1477739442e42db8",
+              "campus_group_id": "6758226c1585ffbcadf07165",
+              "campus_id": "6758226c1585ffbcadf0716b",
+              "course_id": "675831571585ffbcadf0b82a",
+              "batch_id": "6758316f1585ffbcadf0b8dd",
+              "user_id": "67582fdb1585ffbcadf0ac3a",
+              "subject_id": "65ba59aef233a16d51f7163d",
+              "exam_name": "Sound Chapter Test DEBUG",
+              "exam_date": "2026-05-27T00:00:00.000Z",
+              "exam_duration": 600,
+              "start_time": "22:00",
+              "end_time": "22:10",
+              "result_date": "2026-05-27T00:00:00.000Z",
+              "result_time": "00:00",
+              "number_of_questions": 5,
+              "total_marks": 10,
+              "is_online": 1,
+              "exam_instruction": "<ol><li>Log in at least 10 minutes before the test starts.</li><li>Make sure you have a stable internet connection throughout the test.</li><li>Use tablet, laptop or desktop (not mobile phone unless approved).</li><li>Choose a quiet, well-lit space with no distractions around you.</li><li>Do not refresh or switch tabs during the test (may be flagged as misconduct).</li><li>Keep track of time and submit the test before it ends.<ol><li>Switching tabs, turning off your camera, or any suspicious activity may result in test cancellation.</li></ol></li><li>Take a screenshot or photo of your submission confirmation, if required.</li><li>No communication with others is allowed during the test.</li><li>If there is a technical issue, inform your invigilator immediately and wait for instructions.</li></ol>",
+              "cls_test_status": 1,
+              "test_type": "Class Test",
+              "competitive_campus_ids": [],
+              "is_notification": 0,
+              "language": "English",
+              "exam_date_time": "2026-05-27T22:10:00.000Z",
+              "exam_start_date_time": "2026-05-27T22:00:00.000Z",
+              "now_ist": "2026-04-12T12:56:14.000Z",
+              "result_date_time": "2026-05-27T00:00:00.000Z",
+              "time_left_to_start_ms": 3920626000,
+              "time_left_to_end_ms": 3921226000,
+              "result_time_left_to_ms": 3841426000,
+              "selected_questions": 0,
+              "selected_time": 0,
+              "selected_marks": 0,
+              "course_name": "IX",
+              "batch_name": "A",
+              "subject_name": "Science",
+              "chapters_covered_arr": [
+                {
+                  "chap_id": "67ff3d8b2613c0dfa77258d6",
+                  "chapter_name": "Sound",
+                  "chap_count": 0,
+                  "t_data": []
+                }
+              ],
+              "all_assigned_mentors": [
+                {
+                  "user_id": "68495d649b3ad45d55c46364",
+                  "disp_name": "Abhijit Pattnaik"
+                },
+                {
+                  "user_id": "67582e861585ffbcadf09f28",
+                  "disp_name": "Akhilesh"
+                },
+                {
+                  "user_id": "6809cadf1b7d19713d49426d",
+                  "disp_name": "Ayushi Sharma"
+                },
+                {
+                  "user_id": "6858e5c28d34a56ab57a30b4",
+                  "disp_name": "kalyan kumar reddy"
+                },
+                {
+                  "user_id": "67582fdb1585ffbcadf0ac3a",
+                  "disp_name": "Ms. Rachel Green"
+                },
+                {
+                  "user_id": "689476f2e06630c93c9b9667",
+                  "disp_name": "Roshan"
+                },
+                {
+                  "user_id": "684978bc9b3ad45d55c47f23",
+                  "disp_name": "Soyang Samparna Sahoo"
+                },
+                {
+                  "user_id": "684978429b3ad45d55c47e6f",
+                  "disp_name": "Sushri Sangita Mohanty"
+                },
+                {
+                  "user_id": "675830921585ffbcadf0b53b",
+                  "disp_name": "Valen"
+                },
+                {
+                  "user_id": "68947641e06630c93c9b8fac",
+                  "disp_name": "Vrushali"
+                }
+              ]
+            }
+          ]
+        },
+        "message": "Success"
+      }
+    ]
+  }
+}
