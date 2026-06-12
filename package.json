@@ -5,14 +5,31 @@
   "scripts": {
     "test": "npx playwright test",
     "test:headed": "npx playwright test --headed",
-    "test:login": "npx playwright test tests/login.test.js --headed",
-    "report": "npx playwright show-report"
+    "smoke": "npx playwright test tests/smoke --headed",
+    "sanity": "npx playwright test tests/sanity --headed",
+    "regression": "npx playwright test tests/regression --headed",
+    "regression:1": "npx cross-env DATA_COUNT=1 playwright test tests/regression --headed",
+    "regression:3": "npx cross-env DATA_COUNT=3 playwright test tests/regression --headed",
+    "test:login": "npx playwright test tests/auth --headed",
+    "test:classtest": "npx playwright test tests/lesson/classtest --headed",
+    "test:worksheet": "npx playwright test tests/lesson/worksheet --headed",
+    "test:collab": "npx playwright test tests/lesson/collaboration --headed",
+    "test:todo": "npx playwright test tests/todo --headed",
+    "test:api": "npx playwright test tests/api",
+
+    "report": "npx playwright show-report reports/html",
+    "allure:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
+    "allure:open": "allure open reports/allure-report",
+    "allure": "npm run allure:generate && npm run allure:open"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.59.1"
+    "@playwright/test": "^1.59.1",
+    "allure-commandline": "^2.42.1",
+    "allure-playwright": "^3.10.0",
+    "cross-env": "^10.1.0"
   }
 }

@@ -1,24 +1,58 @@
 const path = require('path');
 const fs   = require('fs');
 
-// ── Folder map (mirrors pages/ structure) ─────────────────────────────────────
+// ── Folder map ────────────────────────────────────────────────────────────────
 const BASE = path.join(__dirname, '..', 'screenshots');
 
 const FOLDERS = {
+  // ── Auth ──────────────────────────────────────────────────────────────────
   login:          path.join(BASE, 'auth', 'login'),
   forgotPassword: path.join(BASE, 'auth', 'forgot-password'),
-  dashboard:      path.join(BASE, 'home', 'dashboard'),
-  todo:           path.join(BASE, 'home', 'todo'),
-  mboard:         path.join(BASE, 'home', 'mboard'),
-  lesson:         path.join(BASE, 'home', 'lesson'),
-  addClassTest:   path.join(BASE, 'home', 'add-class-test'),
-  // Single folder for all TC07 steps (lesson + add-class-test combined)
-  tc07:           path.join(BASE, 'TC07'),
-  // TC08 — four sub-steps each get their own folder
-  tc08Form:       path.join(BASE, 'TC08', '01-add-class-test-form'),
-  tc08Questions:  path.join(BASE, 'TC08', '02-select-questions'),
-  tc08Submit:     path.join(BASE, 'TC08', '03-submit'),
-  tc08Finalize:   path.join(BASE, 'TC08', '04-finalize'),
+
+  // ── Dashboard ─────────────────────────────────────────────────────────────
+  dashboard:      path.join(BASE, 'dashboard'),
+
+  // ── TO-DO module ──────────────────────────────────────────────────────────
+  todo:           path.join(BASE, 'todo'),
+  mboard:         path.join(BASE, 'todo', 'mboard'),
+
+  // ── Lesson → Worksheet ───────────────────────────────────────────────────
+  worksheetList:   path.join(BASE, 'lesson', 'worksheet', 'list'),
+  worksheetCreate: path.join(BASE, 'lesson', 'worksheet', 'create'),
+
+  // TC11 — data-driven worksheet creation
+  tc11:            path.join(BASE, 'lesson', 'worksheet', 'TC11'),
+
+  // TC12 — Scenario 1: Full Happy Path
+  tc12Create:      path.join(BASE, 'lesson', 'worksheet', 'TC12', 'S1-01-create'),
+  tc12Verify:      path.join(BASE, 'lesson', 'worksheet', 'TC12', 'S1-02-verify'),
+
+  // TC13 — Scenario 2: Create then Delete
+  tc13Create:      path.join(BASE, 'lesson', 'worksheet', 'TC13', 'S2-01-create'),
+  tc13Delete:      path.join(BASE, 'lesson', 'worksheet', 'TC13', 'S2-02-delete'),
+
+  // TC14 — Scenario 3: Edit an existing worksheet
+  tc14Edit:        path.join(BASE, 'lesson', 'worksheet', 'TC14', 'S3-01-edit'),
+
+  // TC15 — Scenario 4: Full wizard step-by-step
+  tc15Wizard:      path.join(BASE, 'lesson', 'worksheet', 'TC15'),
+
+  // ── Lesson → Collaboration ────────────────────────────────────────────────
+  // TC16 — Create Collaboration
+  tc16:            path.join(BASE, 'lesson', 'collaboration', 'TC16'),
+
+  // ── Lesson → Class Test ───────────────────────────────────────────────────
+  tc07:           path.join(BASE, 'lesson', 'classtest', 'TC07'),
+
+  tc08Form:       path.join(BASE, 'lesson', 'classtest', 'TC08', 'S1-01-form'),
+  tc08Questions:  path.join(BASE, 'lesson', 'classtest', 'TC08', 'S1-02-questions'),
+  tc08Submit:     path.join(BASE, 'lesson', 'classtest', 'TC08', 'S1-03-submit'),
+  tc08Finalize:   path.join(BASE, 'lesson', 'classtest', 'TC08', 'S1-04-finalize'),
+
+  tc09SkipQ:      path.join(BASE, 'lesson', 'classtest', 'TC09', 'S2-01-skip-questions'),
+  tc09EditQ:      path.join(BASE, 'lesson', 'classtest', 'TC09', 'S2-02-edit-add-questions'),
+
+  tc10Conflict:   path.join(BASE, 'lesson', 'classtest', 'TC10', 'S3-conflict-handling'),
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -30,61 +64,38 @@ function sanitize(str) {
   return str.replace(/[^a-zA-Z0-9_-]/g, '_').substring(0, 80);
 }
 
-/**
- * Delete all old screenshots in a folder whose name starts with a given prefix.
- * Used to wipe previous FAILED__ shots before a fresh run.
- */
-function clearOldScreenshots(dir, prefix = '') {
-  if (!fs.existsSync(dir)) return;
-  fs.readdirSync(dir)
-    .filter(f => f.endsWith('.png') && (prefix === '' || f.startsWith(prefix)))
-    .forEach(f => fs.unlinkSync(path.join(dir, f)));
-}
-
 // ── Public API ────────────────────────────────────────────────────────────────
 
 /**
- * Call once at the START of each test (beforeEach) to wipe stale screenshots
- * for that test so the folder always reflects only the latest run.
- * @param {string} testName - e.g. 'TC01'  (prefix to match files)
- */
-function clearTestScreenshots(testName) {
-  const prefix = sanitize(testName);
-  Object.values(FOLDERS).forEach(dir => clearOldScreenshots(dir, prefix));
-  // also clear any FAILED__ shots for this test
-  Object.values(FOLDERS).forEach(dir => clearOldScreenshots(dir, `FAILED__${prefix}`));
-}
-
-/**
- * Take a step screenshot — overwrites any previous file with the same name.
- * Fixed filename = no duplicates across runs.
+ * Take a PASS screenshot — called once at the end of a test that passes.
+ * Filename is fixed (no timestamp) so each run overwrites the previous one.
  *
  * @param {import('@playwright/test').Page} page
- * @param {string} folder   - key from FOLDERS (e.g. 'login') OR absolute path
- * @param {string} stepName - unique label per step, e.g. 'TC01_step1_login_page_opened'
+ * @param {string} folder   - key from FOLDERS (e.g. 'login') or absolute path
+ * @param {string} testName - e.g. 'TC01_passed'
  */
-async function screenshotStep(page, folder, stepName) {
+async function screenshotPass(page, folder, testName) {
   const dir  = FOLDERS[folder] ?? folder;
   ensureDir(dir);
-  const file = path.join(dir, `${sanitize(stepName)}.png`);   // ← fixed name, no timestamp
+  const file = path.join(dir, `PASS__${sanitize(testName)}.png`);
   await page.screenshot({ path: file, fullPage: true });
-  console.log(`  📸 [PASS]  ${path.basename(file)}`);
+  console.log(`  ✅ [PASS screenshot]  ${path.basename(file)}`);
 }
 
 /**
- * Take a failure screenshot — fixed name per test, overwrites previous failure.
- * Called automatically from test.afterEach when status === 'failed'.
+ * Take a FAIL screenshot — called from afterEach when the test fails.
+ * Filename is fixed so each run overwrites the previous failure shot.
  *
  * @param {import('@playwright/test').Page} page
- * @param {string} folder     - key from FOLDERS or absolute path
- * @param {string} testTitle  - test name  (used as filename)
+ * @param {string} folder    - key from FOLDERS or absolute path
+ * @param {string} testTitle - test name used as filename
  */
 async function screenshotFail(page, folder, testTitle) {
   const dir  = FOLDERS[folder] ?? folder;
   ensureDir(dir);
-  const file = path.join(dir, `FAILED__${sanitize(testTitle)}.png`); // ← fixed name
+  const file = path.join(dir, `FAIL__${sanitize(testTitle)}.png`);
   await page.screenshot({ path: file, fullPage: true });
-  console.log(`  ❌ [FAIL]  ${path.basename(file)}`);
+  console.log(`  ❌ [FAIL screenshot]  ${path.basename(file)}`);
 }
 
-module.exports = { screenshotStep, screenshotFail, clearTestScreenshots, FOLDERS };
+module.exports = { screenshotPass, screenshotFail, FOLDERS };

@@ -1,7 +1,7 @@
 const credentials = {
   validUser: {
-    email: 'teacherdemo@gmail.com',
-    password: 'Teacher@01',
+    email:    process.env.TEST_EMAIL    || 'teacherdemo@gmail.com',
+    password: process.env.TEST_PASSWORD || 'Teacher@01',
   }
 };
 

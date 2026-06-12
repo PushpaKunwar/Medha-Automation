@@ -2,19 +2,23 @@
 const { defineConfig, devices } = require('@playwright/test');
 
 module.exports = defineConfig({
+  globalSetup: './utils/globalSetup',
   testDir: './tests',
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: 1,
   reporter: [
-    ['html', { open: 'never' }],
+    ['html',  { open: 'never', outputFolder: 'reports/html' }],
+    ['json',  { outputFile: 'reports/results.json' }],
     ['list'],
+    ['allure-playwright', { outputFolder: 'reports/allure-results' }],
   ],
   use: {
-    baseURL: 'https://live.mafatlaleducation.com:5020/',
+    baseURL: process.env.BASE_URL || 'https://live.mafatlaleducation.com:5020/',
     headless: false,
     viewport: { width: 1280, height: 720 },
+    actionTimeout: 30000,        // 30 s cap on every click / fill / scroll — prevents inheriting the full test timeout
     screenshot: 'off',           // screenshots handled manually per step in tests
     video: 'retain-on-failure',
     trace: 'retain-on-failure',
